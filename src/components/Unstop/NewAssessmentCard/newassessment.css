@@ -4,6 +4,9 @@
   border-radius: 10px;
   /* border: 1px dotted #DADCE0; */
 }
+.my-assess-items:hover {
+  cursor: pointer;
+}
 .img-con {
   background-color: white;
   width: 70px;
