@@ -1,0 +1,50 @@
+.my-assess-items {
+  width: 388px;
+  height: 209px;
+  border-radius: 10px;
+  /* border: 1px dotted #DADCE0; */
+}
+.img-con {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item1-head {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  word-wrap: break-word;
+  padding-left: 16px;
+  color: #1c4980;
+  margin-bottom: 0px;
+}
+.item1-text {
+  font-size: 12px;
+  text-align: center;
+  color: #1c4980;
+  padding: 5px 10px 5px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .my-assess-items {
+    width: 345px;
+    padding: 14px;
+  }
+  .item1-head {
+    display: none;
+  }
+  .formed-card {
+    padding: 14px;
+  }
+  .my-assess-items {
+    height: auto;
+    width: 345px;
+  }
+  .add-modile {
+    height: 159px;
+  }
+}

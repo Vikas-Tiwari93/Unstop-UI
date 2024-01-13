@@ -1,0 +1,71 @@
+.sidemob {
+  height: 100vh;
+  width: 315px;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.not-active {
+  width: 0px;
+  overflow: hidden;
+}
+.main_mobile.active {
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.side2 {
+  margin: 10px 20px 10px 20px;
+  display: flex;
+  padding: 12px;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.side2 img {
+  padding-right: 8px;
+}
+.underline1 {
+  padding-top: 10px;
+  border-bottom: 1.5px dotted rgb(220, 229, 234);
+}
+
+.side21 {
+  margin: 10px 20px 10px 20px;
+  display: flex;
+  padding: 12px;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes slideIn1 {
+  from {
+    transform: translateX(-85%) translateY(0);
+  }
+  to {
+    transform: translateX(0%) translateY(0);
+  }
+}
+@keyframes slideIn2 {
+  from {
+    transform: translateX(0%) translateY(0);
+  }
+  to {
+    transform: translateX(-85%) translateY(0);
+  }
+}
+.sidemob.active {
+  padding: 20px 6px;
+  height: 110vh;
+  font-size: 14px;
+  background: var(--secondary-5, #f2f8fe);
+  animation: slideIn1 0.5s ease-in-out forwards;
+  /* opacity: 1; */
+}
+
+.sidemob:not(.active) {
+  animation: slideIn2 0.5s ease-in-out forwards;
+  /* opacity: 1; */
+}

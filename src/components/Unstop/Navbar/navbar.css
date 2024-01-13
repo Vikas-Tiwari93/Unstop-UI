@@ -1,0 +1,59 @@
+#phone {
+  width: 24px;
+  height: 24px;
+}
+
+.tiny2imagePhone {
+  display: none;
+}
+.assess-mobile {
+  display: none;
+}
+
+.mobile-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebutton {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .tiny2imagePhone {
+    display: inline;
+    width: 24px;
+    height: 24px;
+  }
+  #phone {
+    display: none;
+  }
+  .mobile-wrap {
+    height: auto;
+    width: 100%;
+  }
+  .mobile-wrap div {
+    height: auto;
+    width: 50%;
+  }
+  .border-right {
+    display: none;
+  }
+  .assess-mobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebutton {
+    padding: 10px;
+    display: inline;
+    height: 40px;
+    width: 40px;
+  }
+  .sidebutton:hover {
+    border-radius: 50%;
+    background-color: silver;
+  }
+}
